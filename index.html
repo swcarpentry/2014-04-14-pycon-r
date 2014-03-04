@@ -11,27 +11,97 @@ latlng: 45.530677,-73.624497
 registration: open
 instructor: ["Ramnath Vaidyanathan"]
 contact: admin@software-carpentry.org
+eventbrite: 10319320365
 ---
-{% include bootcamps/instructors.html %}
+<h2>General Information</h2>
 
 <p>
-  <strong>What:</strong>
-  This workshop will be an accelerated introduction to R and its programming ecosystem
-  for people who are already comfortable programming in Python or some other dynamic language.
+  <a href="http://software-carpentry.org">Software Carpentry</a>'s mission
+  is to help people become more productive
+  by teaching them basic computing skills
+  like program design, version control, data management, and task automation.
+  This one-day hands-on workshop will introduce participants to the R statistical language
+  and show them how to apply it to their research problems.
 </p>
 
 <p>
-  <strong>Who:</strong>
-  The course is aimed at scientists (both students and professionals)
-  who are familiar with basic concepts in both programming and statistics.
+  <em>Note that the workshop is open to everyone, not just PyCon attendees, but does assume prior programming experience in some language (not necessarily R).</em>
 </p>
 
-{% include bootcamps/requirements.html %}
+{% if page.eventbrite %}
+<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" height="250" width="100%" scrolling="auto"></iframe>
+{% endif %}
 
-{% include bootcamps/contact.html %}
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+{% if page.latlng %}
+<p>
+  <strong>Where:</strong>
+  {{ page.address }}.
+  Get directions with
+  <a href="http://www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="http://maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+</p>
+{% endif %}
+
+<p>
+  <strong>Contact</strong>:
+  Please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  for more information.
+</p>
+
+<p>
+  <strong>Requirements:</strong>
+  Participants must bring a laptop with a few specific software packages installed:
+</p>
+
+<ul>
+  <li>
+    <strong>Windows</strong>:
+    Install R by downloading and running
+    <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+    from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+    Also, please install the
+    <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+  </li>
+  <li>
+    <strong>Mac OS X</strong>:
+    Install R by downloading and running
+    <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+    from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+    Also, please install the
+    <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+  </li>
+
+  <li>
+    <strong>Linux</strong>:
+    You can download the binary files for your distribution
+    from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
+    you can use your package manager, e.g. for Debian/Ubuntu
+    run <code>apt-get install r-base</code>. Also, please install
+    the
+    <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+  </li>
+</ul>
 
 <hr/>
 
-<h2>Setup</h2>
-
-<p>To be written.</p>
+<h2>Sponsors</h2>
+<p>
+  <a href="https://www.enthought.com/"><img src="./img/enthoughtPyCon.png" alt="Enthought" /></a>
+</p>
+<p>
+  Our thanks to <a href="https://www.enthought.com/">Enthought</a> for their
+  generous sponsorship of this bootcamp.
+</p>
