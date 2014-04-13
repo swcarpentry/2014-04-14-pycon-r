@@ -2,7 +2,7 @@
 layout: bootcamp
 root: .
 venue: R for Python Programmers
-address: Palais de Congres, Montreal, Quebec
+address: Room 525, Palais de Congres, Montreal, Quebec
 country: Canada
 humandate: Apr 15, 2014
 humantime: 9:00 am - 4:30 pm
@@ -20,12 +20,20 @@ eventbrite: 10319320365
   is to help people become more productive
   by teaching them basic computing skills
   like program design, version control, data management, and task automation.
-  This one-day hands-on workshop will introduce participants to the R statistical language
-  and show them how to apply it to their research problems.
+  This workshop will be a comprehensive introduction to the R language.
+  It will cover the fundamentals of the language,
+  data structures and manipulation,
+  data visualization,
+  reproducible research,
+  package building,
+  and interactive documents.
+  The goal will be to expose researchers familiar with programming and statistics
+  to the extended capabilities of R as a programming language,
+  and how it can integrate into their own research workflows.
 </p>
 
 <p>
-  <em>Note that the workshop is open to everyone, not just PyCon attendees, but does assume prior programming experience in some language (not necessarily R).</em>
+  <em>Note that the workshop is open to everyone, not just PyCon attendees, but does assume prior programming experience in some language.</em>
 </p>
 
 {% if page.eventbrite %}
@@ -61,39 +69,60 @@ eventbrite: 10319320365
   for more information.
 </p>
 
+<hr/>
+
+<h2>Topics Covered</h2>
+
+<ol>
+  <li>Basics of R</li>
+  <li>Data Structures</li>
+  <li>Functions and Control Structures</li>
+  <li>Data Manipulation</li>
+  <li>Data Visualization</li>
+  <li>Reproducible Research</li>
+  <li>Package Building</li>
+  <li>Interactive Documents</li>
+</ol>
+
+<hr/>
+
+<h2>Requirements</h2>
+
 <p>
-  <strong>Requirements:</strong>
-  Participants must bring a laptop with a few specific software packages installed:
+  All participants are requested to install the following software on their laptops prior to the workshop.
+  It is very important that you install the versions recommended below (or a later one).
 </p>
 
-<ul>
-  <li>
-    <strong>Windows</strong>:
-    Install R by downloading and running
-    <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-    from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-    Also, please install the
-    <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-  </li>
-  <li>
-    <strong>Mac OS X</strong>:
-    Install R by downloading and running
-    <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-    from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-    Also, please install the
-    <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-  </li>
+<ol>
+  <li><a href="http://cran.rstudio.com/">R 3.0.2</a></li>
+  <li><a href="http://www.rstudio.com/ide/download/">RStudio 0.98.501</a></li>
+</ol>
 
-  <li>
-    <strong>Linux</strong>:
-    You can download the binary files for your distribution
-    from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-    you can use your package manager, e.g. for Debian/Ubuntu
-    run <code>apt-get install r-base</code>. Also, please install
-    the
-    <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-  </li>
-</ul>
+<p>
+  The instructor will also be providing notes and exercises for the workshop
+  as <a href="http://ipython.org/ipython-doc/stable/interactive/notebook.html">IPython Notebooks</a>.
+  If you want to take advantage of that,
+  I would recommend that you install <a href="http://ipython.org/install.html">IPython</a> and its dependencies.
+  You may use <a href="http://www.continuum.io/blog/conda">Conda</a>
+  by <a href="http://continuum.io/">Continuum Analytics</a>
+  to manage installation of Python packages.
+</p>
+
+<hr/>
+
+<h2>References</h2>
+
+<p>
+  While there are several resources available online to learn R,
+  there are very few that approach the topic from a programming perspective.
+  Since many of you already have a programming/statistical background,
+  I will recommend the following references:
+</p>
+
+<ol>
+  <li><a href="http://adv-r.had.co.nz/">Advanced R Programming</a> by <a href="http://had.co.nz">Hadley Wickham</a>.</li>
+  <li><a href="http://heather.cs.ucdavis.edu/~matloff/132/NSPpart.pdf">Art of R Programming</a> by <a href="http://heather.cs.ucdavis.edu/~matloff/matloff.html">Norman Matloff</a>.</li>
+</ol>
 
 <hr/>
 
