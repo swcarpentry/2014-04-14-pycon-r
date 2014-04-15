@@ -10,6 +10,7 @@ startdate: 2014-04-15
 latlng: 45.530677,-73.624497
 registration: open
 instructor: ["Ramnath Vaidyanathan"]
+helper: ["Denis Haine", "John Blischak"]
 contact: admin@software-carpentry.org
 eventbrite: 10319320365
 ---
@@ -44,6 +45,13 @@ eventbrite: 10319320365
 <p>
   <strong>Instructors:</strong>
   {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+{% if page.instructor %}
+<p>
+  <strong>Helpers:</strong>
+  {{page.helper | join: ', ' %}}
 </p>
 {% endif %}
 
