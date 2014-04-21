@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>/swc-pycon2014-r</title>
+</head>
+<body>Welcome to the R for Python Programmers Master Class<br
+/><br
+/>We will use this etherpad to promote discussion throughout the day. We will post links, code, and also answer any questions you might have. Please sign in your name at the top right.<br
+/><br
+/>I have added a few sections to the etherpad in anticipation of the kind of discussions we might have. Feel free to add more sections with the idea of grouping together similar topics.<br
+/><br
+/><b>USEFUL LINKS</b><br
+/><br
+/>Workshop website: <a href="http://swcarpentry.github.io/2014-04-14-pycon-r/">http://swcarpentry.github.io/2014-04-14-pycon-r/</a><br
+/><br
+/>Summarize Page<br
+/><br
+/><a href="http://ramnathv.github.io/pycon2014-r/explore/summarize.html">http://ramnathv.github.io/pycon2014-r/explore/summarize.html</a><br
+/><br
+/>Shiny App Code<br
+/><br
+/><a href="https://gist.github.com/ramnathv/10764200">https://gist.github.com/ramnathv/10764200</a><br
+/><br
+/>R User Group Meetup<br
+/><br
+/><a href="http://www.meetup.com/Montreal-R-User-Group/">http://www.meetup.com/Montreal-R-User-Group/</a><br
+/>And if you're too far away from Montreal:<br
+/><a href="http://blog.revolutionanalytics.com/local-r-groups.html">http://blog.revolutionanalytics.com/local-r-groups.html</a><br
+/><br
+/><br
+/>Git repository: <a href="https://github.com/ramnathv/pycon2014-r">https://github.com/ramnathv/pycon2014-r</a><br
+/>Web page: <a href="https://ramnathv.github.io/pycon2014-r/">https://ramnathv.github.io/pycon2014-r/</a><br
+/><br
+/>Please download code and data using this link:&nbsp;<br
+/><br
+/><a href="https://github.com/ramnathv/pycon2014-r/archive/gh-pages.zip">https://github.com/ramnathv/pycon2014-r/archive/gh-pages.zip</a><br
+/><br
+/>RStudio keyboard shortcuts: <a href="http://www.rstudio.com/ide/docs/using/keyboard_shortcuts">http://www.rstudio.com/ide/docs/using/keyboard_shortcuts</a><br
+/>RStudio documentation: <a href="https://support.rstudio.com/hc/en-us/categories/200035113-Documentation">https://support.rstudio.com/hc/en-us/categories/200035113-Documentation</a><br
+/><br
+/>Resources for learning R:<br
+/>Introduction to R: <a href="http://cran.r-project.org/doc/manuals/R-intro.pdf">http://cran.r-project.org/doc/manuals/R-intro.pdf</a><br
+/>Advanced R Programming: <a href="http://adv-r.had.co.nz/">http://adv-r.had.co.nz/</a><br
+/>R-FAQ: <a href="http://cran.r-project.org/doc/manuals/R-FAQ.html">http://cran.r-project.org/doc/manuals/R-FAQ.html</a><br
+/>Art of R Programming: <a href="http://heather.cs.ucdavis.edu/~matloff/132/NSPpart.pdf">http://heather.cs.ucdavis.edu/~matloff/132/NSPpart.pdf</a><br
+/>Bioconductor: <a href="http://bioconductor.org/">http://bioconductor.org/</a><br
+/>Inside-R: <a href="http://www.inside-r.org/">http://www.inside-r.org/</a><br
+/>R-bloggers: <a href="http://www.r-bloggers.com/">http://www.r-bloggers.com/</a><br
+/>Twitter #rstats: <a href="https://twitter.com/search?q=%23rstats&src=typd">https://twitter.com/search?q=%23rstats&amp;src=typd</a><br
+/>ggplot2 documentation: <a href="http://docs.ggplot2.org">http://docs.ggplot2.org</a><br
+/>R chart colors: <a href="http://research.stowers-institute.org/efg/R/Color/Chart/">http://research.stowers-institute.org/efg/R/Color/Chart/</a><br
+/>shiny: <a href="http://www.rstudio.com/shiny/">http://www.rstudio.com/shiny/</a><br
+/>slidify: <a href="https://slidify.github.io/index.html">https://slidify.github.io/index.html</a><br
+/>Cross Validated: <a href="https://stats.stackexchange.com/">https://stats.stackexchange.com/</a><br
+/>Coursera data science specialization: <a href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage">https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage</a><br
+/>search on packages, functions etc: <a href="http://rseek.org/">http://rseek.org/</a><br
+/>Applied Predictive Modeling: <a href="http://appliedpredictivemodeling.com/">http://appliedpredictivemodeling.com/</a><br
+/><br
+/><b>USER PROBLEMS</b><br
+/><br
+/>I don't seem to be able to scroll down in the web pages, a next arrow obscures the scrollbar.<br
+/>I tried shrinking my web browser and that allowed me to scroll.<br
+/>Two finger scrolling on my touchpad seems to work.<br
+/><br
+/>ERROR: dependencies ‘plyr’, ‘reshape2’, ‘scales’ are not available for package ‘ggplot2’* removing ‘/home/user/R/x86_64-pc-linux-gnu-library/2.14/ggplot2’<br
+/><br
+/>To update R on ubuntu (or other linux distro), go to <a href="http://cran.r-project.org/">http://cran.r-project.org/</a> &gt; Download R for Linux &gt; choose your distro and follow the instructions there<br
+/><br
+/>To update R on Debian, apt-get install r-base r-base-dev r-cran-*<br
+/>This will give you all R related packages.<br
+/><br
+/><b>QUESTIONS</b><br
+/><br
+/>How do we write comments in R code?<br
+/><br
+/>The comment character is the pound sign, #.<br
+/><br
+/>When loading data, is the dataset bounded to availble memory? Excel limit was 65k back then, does R has similar limitations? Thanks!<br
+/><br
+/>Base R does load all the data into memory. If you are planning on doing analyses on very large data sets in R, you'll need to utilize new packages like data.table and dplyr.<br
+/><br
+/>data.table: <a href="http://datatable.r-forge.r-project.org/">http://datatable.r-forge.r-project.org/</a><br
+/>dplyr: <a href="https://github.com/hadley/dplyr">https://github.com/hadley/dplyr</a><br
+/>or very large: <a href="http://cran.r-project.org/web/views/HighPerformanceComputing.html">http://cran.r-project.org/web/views/HighPerformanceComputing.html</a> (but it all depends on your understanding of large)<br
+/><br
+/>Is there a method in the R Studio's console to get the last line typed, similar to the results of the up error when running R in a Terminal? Yes, you can scroll up and down through history in the R console just like in the terminal using the up and down arrows. If you want to access history from farther back, there is a history pane that has an search bar.<br
+/><br
+/>Does R not do bounds checking on arrays?&nbsp; For example&nbsp;<br
+/>a&lt;- 1:9<br
+/>a[99]<br
+/>[1] NA<br
+/>Correct. It returns "NA" for "Not Available".<br
+/>Is there a way to differential that from cases where NA is actually stored in the array? No.<br
+/>You would have to check the length of your array first for example<br
+/><br
+/>How do we save the command history?<br
+/>When you exit RStudio, it will ask you if you want to save the workspace. If you say yes, it will save the data objects in .RData and the command line history in .Rhistory. If you open R or Rstudio from within this directory, it will automatically load the data and command history. This is a nice feature when you are first learning, but it's use is discouraged as you start writing more advanced code since it is dangerous to load objects that you may no longer be using. You can change RStudio's default settings with Tools&gt;Global Options...<br
+/><br
+/>From Stack Overflow in case anyone is curious like me:<br
+/>What is the difference between "=" and "&lt;-"<br
+/>The operators &lt;- and = assign into the environment in which they are evaluated. The operator &lt;- can be used anywhere, whereas the operator = is only allowed at the top level (e.g., in the complete expression typed at the command prompt) or as one of the subexpressions in a braced list of expressions.<br
+/><br
+/>And from the chat:<br
+/><i>unnamed</i>: so $ will only work for named elements ?<br
+/>10:03 Alexandre: l2$2 returns an error for instance<br
+/>10:04 John Blischak (helper): correct<br
+/>10:05 Denis Haine: ctrl-L clears console<br
+/>10:11 Denis Haine: note: mtcars dataset is a built-in dataset in R, no need to download it<br
+/><br
+/>Can R be used to design multifactorial experiments?<br
+/>Yes, see <a href="http://cran.r-project.org/web/views/ExperimentalDesign.html">http://cran.r-project.org/web/views/ExperimentalDesign.html</a><br
+/><br
+/>Is there a difference in R between ' and " (and `)?<br
+/>In traditional programming languages, ' was used to distinguish characters and " strings. Strings are essentially a vector of characters. In R, there is no difference between characters and strings because everything is implemented as a vector of characters on default so both can be used interchangeably. If you're typing a sentence and the sentence has " or ' within it, usually the " " or ' ' container you use to contain it is the other one so there's less confusion and so you don't accidentaly prematurely end the variable.<br
+/><br
+/>For example,&nbsp;<br
+/>sentence &lt;- "Hi, I like 'R'. "<br
+/><br
+/>sentence &lt;- "Hi, I like "R". " actually would not work because the character "R would prematurely close the container.<br
+/><br
+/>From chat:<br
+/>Carlos Rocha: how do i get the number of rows in a data frame?<br
+/>11:40 Carlos Rocha: length(data) returns the number of columns<br
+/>11:41 Denis Haine: dim(data)<br
+/>11:42 Denis Haine: or nrow(data)<br
+/>11:42 Carlos Rocha: thanks<br
+/><br
+/>Alex: how do you get help or doc of a function such as "help summarize" ?<br
+/>13:42 Denis Haine: ?summary<br
+/>13:42 Alex: txs Denis !<br
+/>13:44 Denis Haine: ?summarize&nbsp; in this case. Note: summary is from base R sor help always available.&nbsp; summarize is from plyr so help available on summarize after having&nbsp; loaded the package plyr<br
+/><br
+/><br
+/>Alex: how do i acces the last 10 elements of a vector. something like vector[end-20:end]<br
+/>13:57 John Blischak (helper): you can get the length of the vector with the function `length`<br
+/>13:58 John Blischak (helper): x[(length(x) - 9):length(x)]<br
+/><br
+/><br
+/>How to install a R library directly from github?<br
+/>Using the devtools package.<br
+/>install.packages("devtools")<br
+/>library("devtools")<br
+/>install_github('slidify', 'ramnathv')<br
+/>install_github('slidifyLibraries', 'ramnathv')<br
+/>You can also install from Bitbucket and Gitorious.<br
+/>Thanks :)<br
+/>Neat!<br
+/><br
+/><br
+/>Considering there is a data frame d and it is copied using:<br
+/>&gt; d_copy &lt;- d<br
+/>do both variables (d_copy and d) point to the same memory address? Will d_copy<br
+/>be affected by changes made to d?<br
+/>No, R makes a complete copy. It also does this during function calls as well, which is why it can be really difficult to use base R with large data sets. One of the improvements implemented in the data.table package is to not create a new copy when a data.table is passed to a function.<br
+/>:) Excellent!<br
+/><br
+/>What about debugging..? What is used to debug r scripts (is there something similar to gcc, pdb, etc..?)<br
+/>Putting&nbsp; the function call browser() in a function is like pdb.set_trace().<br
+/>debug(foo) will drop you into foo whenever it is called.<br
+/>great, tnx!<br
+/>You can also set the option options(error = recover) which will drop you into an environment whenever your code throws and error. This is useful when you're not sure which function is causing the error (or if it is deep in the call stack).<br
+/>For more visual aid when debugging: <a href="http://cran.r-project.org/web/packages/debug/index.html">http://cran.r-project.org/web/packages/debug/index.html</a><br
+/><br
+/>Unit testing frameworks for R?<br
+/>RUnit: <a href="http://cran.r-project.org/web/packages/RUnit/index.html">http://cran.r-project.org/web/packages/RUnit/index.html</a><br
+/>testthat: <a href="http://adv-r.had.co.nz/Testing.html">http://adv-r.had.co.nz/Testing.html</a><br
+/>svUnit: <a href="http://cran.r-project.org/web/packages/svUnit/">http://cran.r-project.org/web/packages/svUnit/</a><br
+/><br
+/><b>TOPICS I WOULD LIKE TO SEE</b><br
+/>&nbsp;<br
+/>Visualization tools (seconded) (+++)<br
+/>lattice: <a href="http://cran.r-project.org/web/packages/lattice/index.html">http://cran.r-project.org/web/packages/lattice/index.html</a><br
+/>ggplot2: <a href="http://ggplot2.org/">http://ggplot2.org/</a><br
+/>We will cover this in detail<br
+/><br
+/>Using R in a full development stack (e.g. web dev) <a href="http://cran.r-project.org/web/views/WebTechnologies.html">http://cran.r-project.org/web/views/WebTechnologies.html</a><br
+/>I will talk about this in the last hour. Web development with R has picked up quite a bit in the last few years with Shiny by RStudio and OpenCPU. I will show some examples and point you to resources.<br
+/>If you have the chance, I'd also love to hear a bit about integrating it with a more typical web stack (e.g. Python with Django). So I don't necessarily want to serve documents from R, but integrate its results in another app.(+)<br
+/>&nbsp;&nbsp; For example, can you connect to it via a tcp socket like you would to a database?<br
+/>I am sure there are ways to do this, but not something that I am familiar with. If I find some resources around this, I will post it on the workshop website when I update it after.<br
+/>Does Rserve provide the type of integration you are looking for? <a href="http://cran.r-project.org/web/packages/Rserve/index.html">http://cran.r-project.org/web/packages/Rserve/index.html</a><br
+/><br
+/>Data Loading (parsing, cleaning, etc) + Data loading from Databases, such as python's DBAPI<br
+/>We'll cover loading and cleaning data, but not database access. R has many packages for accessing databases: <a href="http://statmethods.net/input/dbinterface.html">http://statmethods.net/input/dbinterface.html</a>. Also check out dplyr. Thanks<br
+/><br
+/>Loads for data (TeraBytes) See the links to data.table and dplyr above.<br
+/>We will do a bit with dplyr and data.table, but just a bit. These are packages that merit a whole workshop themselves.<br
+/><br
+/>Connecting to and from R from other programming languages; foreign function interfaces, R callbacks, and similar topics<br
+/>C++: <a href="http://adv-r.had.co.nz/Rcpp.html">http://adv-r.had.co.nz/Rcpp.html</a><br
+/>C: <a href="http://adv-r.had.co.nz/C-interface.html">http://adv-r.had.co.nz/C-interface.html</a><br
+/>Rpy2: <a href="https://pypi.python.org/pypi/rpy2/2.2.6">https://pypi.python.org/pypi/rpy2/2.2.6</a><br
+/>IPython R magic: <a href="http://ipython.org/ipython-doc/dev/config/extensions/rmagic.html">http://ipython.org/ipython-doc/dev/config/extensions/rmagic.html</a><br
+/>The manual for writing R extensions covers calling C, C++, and Fortran functions: <a href="http://cran.r-project.org/doc/manuals/R-exts.html">http://cran.r-project.org/doc/manuals/R-exts.html</a><br
+/><br
+/>Logistic_Regression.R &lt;- <a href="http://www.ats.ucla.edu/stat/r/dae/logit.htm">http://www.ats.ucla.edu/stat/r/dae/logit.htm</a><br
+/><br
+/><br
+/></body>
+</html>
